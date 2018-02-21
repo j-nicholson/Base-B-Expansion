@@ -11,9 +11,14 @@ public class BasebExpansion {
 		
 		System.out.println(basebExpansion(convert, base));
 		scan.close();
-		
 	}
 	
+	/**
+	 * Returns the converted base b of a specified integer.
+	 * @param n the integer to convert
+	 * @param b the integer base to convert to
+	 * @return conversion the base b converted integer
+	 */
 	public static ArrayList<Integer> basebExpansion(int n, int b) {
 		int q = n;
 		ArrayList<Integer> baseExpansion = new ArrayList<Integer>();
@@ -27,7 +32,6 @@ public class BasebExpansion {
 		for (int i = baseExpansion.size() - 1; i >= 0; i--) {
 			conversion.add(baseExpansion.get(i));
 		}
-		
 		return conversion;
 	}
 }
